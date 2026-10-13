@@ -46,43 +46,51 @@
         }
 
         /* ===== NAVBAR ===== */
-        #navbar {
-            position: sticky;
+
+        .navbar {
+            background-color: var(--light);
+            box-shadow: var(--light);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
             top: 0;
-            background: var(--light);
             z-index: 1000;
-            border-bottom: 1px solid var(--border);
-            padding: 0.8rem 0;
+            transition: all 0.3s ease;
         }
-        .nav-inner {
+        
+        .navbar.scrolled {
+            padding: 10px 0;
+            background-color: var(--light);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .nav-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-            position: relative;
         }
-        .brand {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #fff;
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-        }
-        .brand:hover { color: var(--accent); }
-        #nav-links {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
-            margin: 0;
-            align-items: center;
         }
         
-
-      .nav-links {
+        .logo i {
+            margin-right: 8px;
+            color: #ffffff;
+        }
+        
+        .nav-links {
             display: flex;
             list-style: none;
         }
@@ -117,8 +125,14 @@
         .nav-links a:hover::after {
             width: 100%;
         }
+
+
+
         
 
+
+        
+        
 
 
         
